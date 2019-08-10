@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html >
+    <head><title>My first webpage</title>
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+    
+    
+    </head>
+    <body>
+    <table border=1>
+       {{range $index,$value :=.}}
+        <tr>
+            <td>
+                {{$index}}
+            </td>
+            <td>
+            {{$value}}
+            </td>
+
+
+        </tr>
+        {{end}}
+    </table>
+   
+
+    </body>
+</html>

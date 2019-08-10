@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link href="styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+     <h1>country -> currency</h1>
+     <ul>
+        {{ range .Capital}}
+        <li>{{uc .Country}}->{{uc .Currency}}</li>
+        {{end}}
+     </ul>
+
+     <h1>Presidents</h1>
+     <ul>
+        {{ range .Pres}}
+        <li>{{ .Name}}</li>
+        {{end}}
+     </ul>
+      <p>first three letters processed by passing a function to template</p>
+     <ul>
+        {{ range .Pres}}
+        <li>{{ft .Name}}</li>
+        {{end}}
+     </ul>
+      <p> used Predefined Global function
+     <ul>
+         {{range .Capital}}
+            {{if .Currency}}
+            
+            <li>{{.Country}}->{{.Currency}}</li>
+            {{ end}}
+         {{end}}
+
+      </ul>
+
+
+
+
+
+
+</body>
+</html>

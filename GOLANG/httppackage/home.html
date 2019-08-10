@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <style>
+ input[type=text] {
+    
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #555;
+    outline: none;
+  }
+
+  
+  input[type=text]:focus {
+    background-color:pink;
+  }
+  input{
+      width:100px;
+    transition-property: width;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  
+  }
+  input:hover{
+    width:300px;
+  }
+  p{
+      color: azure;
+  }
+  h1{
+      color:blue;
+  }
+  a:link, a:visited {
+                background-color: #36f4eb;
+                 color: white;
+                 padding: 14px 25px;
+                 text-align: center;
+                  text-decoration: none;
+                     display: inline-block;
+}
+
+a:hover, a:active {
+  background-color:burlywood;
+}
+  
+
+            </style>
+        <title>Welcome</title></head>
+    <body>
+     <a href="/">Home</a><br><br><br>
+        <div>
+        <form action="/login" method="POST">
+            FirstName:     <input type="text" id="firstname"name="first" placeholder="Enter name" autofocus autocomplete="off"/>
+            <br><br>
+            Surname:       <input type="text" id="surname"name="surname" placeholder="Enter surname" autofocus autocomplete="off"/>
+            <br><br>
+            Email id :     <input type="text" id="email"name="email" placeholder="Enter email-id" autofocus autocomplete="off"/><br><br>
+            Mobile Number: <input type="text" id="phnno"name="phonenumber" placeholder="Enter phonenumber" autofocus autocomplete="off"/><br><br>
+            <input type="submit" name="OnSubmit" value="submitted"/>
+        </form>
+       
+    </div>
+            
+
+    </body>
+</html>

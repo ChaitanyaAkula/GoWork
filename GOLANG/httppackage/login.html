@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <style>
+                a:link, a:visited {
+                background-color: #36f4eb;
+                 color: white;
+                 padding: 14px 25px;
+                 text-align: center;
+                  text-decoration: none;
+                     display: inline-block;
+}
+
+a:hover, a:active {
+  background-color:burlywood;
+}
+
+                </style>
+        <title>Welcome</title></head>
+    <body>
+       <a href="/">Home</a><br><br><br>
+       <p>User Logined</p>
+       <h1>FirstName:{{.Fname}}</h1>
+        <h1>Surname:{{.Surname}}</h1>
+        <h1>Email-id:{{.Emailid}}</h1>
+        <h1>Mobile NUmber:{{.Phonenumber}}</h1>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>My second webpage</title>
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div>
+    <h1>country -> capital</h1>
+    <ul>
+
+        {{range $key,$value:=.}}
+        <li>
+            {{$key}}  ->   {{$value}}
+       </li>
+       {{end}}
+</div>
+
+</body>
+</html>
